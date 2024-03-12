@@ -1,0 +1,30 @@
+/* If you don't plan to use TailwindCSS in your project, you can remove these imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.myh1{
+  @apply mb-8 text-4xl text-white font-semibold
+}
+
+.myInputFieldStyle{
+  @apply focus:outline-none px-5
+}
