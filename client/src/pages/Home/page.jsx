@@ -27,7 +27,7 @@ export default function Home() {
         <ButtonRedirect link="/add-task" placeholder="New task" className="bg-yellow-300 w-52 h-12 flex justify-center items-center font-medium rounded-3xl" />
       </div>
       <hr className="my-10" />
-      {tasks ? tasks.map(task => <TodoItems key={task.id} todoName={task.task} />) : null}
+      {tasks ? tasks.map(task => <TodoItems key={task.id} todoName={task.task} />) : <p className="text-red-600">Belom ada task</p>}
     </Layout>
   );
 }
