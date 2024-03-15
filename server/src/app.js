@@ -32,6 +32,4 @@ app.use((req, res, next) => {
 // pass any unhandled errors to the error handler
 app.use(errorHandler);
 
-console.log(process.env.CLIENT_URL)
-
 module.exports = app;
